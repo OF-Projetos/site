@@ -50,8 +50,24 @@ const Home = () => {
                 as={RouterLink}
                 to="/contato"
                 size="lg"
-                colorScheme="red"
-                _hover={{ bg: 'brand.secondary' }}
+                bg="white"
+                color="brand.primary"
+                border="2px solid white"
+                fontWeight="bold"
+                fontSize="lg"
+                px={8}
+                py={6}
+                borderRadius="lg"
+                transition="all 0.3s ease"
+                _hover={{
+                  bg: 'brand.secondary',
+                  color: 'white',
+                  transform: 'translateY(-2px)',
+                  boxShadow: '0 8px 25px rgba(0,0,0,0.15)',
+                }}
+                _active={{
+                  transform: 'translateY(0px)',
+                }}
               >
                 Solicite um Orçamento
               </Button>
@@ -61,7 +77,23 @@ const Home = () => {
                 size="lg"
                 variant="outline"
                 color="white"
-                _hover={{ bg: 'whiteAlpha.200' }}
+                borderColor="white"
+                borderWidth="2px"
+                fontWeight="bold"
+                fontSize="lg"
+                px={8}
+                py={6}
+                borderRadius="lg"
+                transition="all 0.3s ease"
+                _hover={{
+                  bg: 'white',
+                  color: 'brand.primary',
+                  transform: 'translateY(-2px)',
+                  boxShadow: '0 8px 25px rgba(0,0,0,0.15)',
+                }}
+                _active={{
+                  transform: 'translateY(0px)',
+                }}
               >
                 Conheça Nossos Projetos
               </Button>
@@ -129,8 +161,22 @@ const Home = () => {
               as={RouterLink}
               to="/contato"
               size="lg"
-              colorScheme="blue"
+              bg="brand.primary"
+              color="white"
+              fontWeight="bold"
+              fontSize="lg"
               px={8}
+              py={6}
+              borderRadius="lg"
+              transition="all 0.3s ease"
+              _hover={{
+                bg: 'brand.secondary',
+                transform: 'translateY(-2px)',
+                boxShadow: '0 8px 25px rgba(0,0,0,0.15)',
+              }}
+              _active={{
+                transform: 'translateY(0px)',
+              }}
             >
               Fale Conosco
             </Button>
