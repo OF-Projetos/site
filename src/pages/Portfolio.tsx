@@ -17,6 +17,7 @@ import {
   useDisclosure,
 } from '@chakra-ui/react';
 import { useState } from 'react';
+import LogoBackground from '../components/LogoBackground';
 
 interface Project {
   id: number;
@@ -32,63 +33,63 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: 'Edifício Comercial Skyline',
-    description: 'Projeto estrutural e execução de edifício comercial com 20 pavimentos, incluindo 3 subsolos.',
-    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-    category: 'Comercial',
-    tags: ['Estrutural', 'Alto Padrão', 'Sustentável'],
-    location: 'São Paulo - SP',
-    year: 2022,
+    title: 'Reforma Completa - Edifício Hospitalar 3º Andar',
+    description: 'Execução completa de reforma interna incluindo instalação de drywall, acabamentos em massa corrida e preparação de superfícies para pintura final.',
+    image: 'https://lh3.googleusercontent.com/pw/AP1GczOfx9e6C-MWlWnqM26eNMxfsKv3kkADwZKIff7pZdRRwlpX8ZkLGyEL3ZZ7cJu74vbzTEkplLeYbdmMmO3s6XPFi1cet1EHl-MwmMV-dyVAkhOzB-Q3vmh7qUcygidatnwCuBmHKtRmEwiej9oQaTzwgQ=w430-h931-s-no-gm?authuser=0',
+    category: 'Hospitalar',
+    tags: ['Drywall', 'Acabamentos', 'Reforma'],
+    location: 'Salvador - BA',
+    year: 2025,
   },
   {
     id: 2,
-    title: 'Condomínio Residencial Verde Vale',
-    description: 'Desenvolvimento completo de condomínio residencial com 200 unidades e área de lazer.',
-    image: 'https://images.unsplash.com/photo-1449844908441-8829872d2607?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-    category: 'Residencial',
-    tags: ['Condomínio', 'Área Verde', 'Lazer'],
-    location: 'Campinas - SP',
-    year: 2021,
+    title: 'Reforma de Escadaria - Hospitalar norma de segurança ',
+    description: 'Norma de segurança implementada em escadaria hospitalar',
+    image: 'https://lh3.googleusercontent.com/p/AF1QipNGRM_fkgZqTKFRq8GhozS7tvHb0xWJ_K7JwgAx=s1360-w1360-h1020-rw',
+    category: 'Normas Técnicas',
+    tags: ['Escadaria', 'Acabamentos', 'Renovação'],
+    location: 'Salvador - BA',
+    year: 2025,
   },
   {
     id: 3,
-    title: 'Centro de Distribuição LogisTech',
-    description: 'Projeto e execução de galpão logístico com 50.000m² de área construída.',
-    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-    category: 'Industrial',
-    tags: ['Logística', 'Grande Porte', 'Automação'],
-    location: 'Guarulhos - SP',
-    year: 2023,
+    title: 'Instalação de Esquadrias - Projeto Hospitalar',
+    description: 'Instalação de esquadrias de janela com estrutura metálica, preparação de aberturas e integração com instalações hidráulicas.',
+    image: 'https://lh3.googleusercontent.com/pw/AP1GczMS8riRJYiItRkIZRJOZsCe4L2TX-Ml1gV-dzcCMDVgXJkJQ2NHxw0oCquhBMeMjseDzopB0PuyhaZOxAGiOHTjuNgvgIW2gVmeKFSmmBwb2k3qbpqFblwfhFg3nSZWsist-sTwa3yZ39cW6sUQnn8m_A=w430-h931-s-no-gm?authuser=0',
+    category: 'Hospitalar',
+    tags: ['Esquadrias', 'Estrutural', 'Instalações'],
+    location: 'Salvador - BA',
+    year: 2024,
   },
   {
     id: 4,
-    title: 'Hospital Regional Santa Clara',
-    description: 'Consultoria técnica e gerenciamento da construção de complexo hospitalar.',
-    image: 'https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-    category: 'Saúde',
-    tags: ['Hospitalar', 'Complexo', 'Especializado'],
-    location: 'Ribeirão Preto - SP',
-    year: 2022,
+    title: 'Supervisão e acompanhamento blidagem - Verniz Antichama',
+    description: 'Execução de acabamentos Norma Regulamentadora 32 (NR-32), pintura e verniz antichama.',
+    image: 'https://lh3.googleusercontent.com/p/AF1QipNRxpunw0RoinNVMNTMQzYkQM927qo1ouEsShrv=s1360-w1360-h1020-rw',
+    category: 'Hospitalar',
+    tags: ['blidagem', 'Piso Madeira', 'Verniz'],
+    location: 'Salvador - BA',
+    year: 2025,
   },
   {
     id: 5,
-    title: 'Shopping Center Plaza Mall',
-    description: 'Projeto estrutural e acompanhamento de obra de centro comercial com 45.000m².',
-    image: 'https://images.unsplash.com/photo-1519420573924-65fcd45245f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-    category: 'Comercial',
-    tags: ['Shopping', 'Varejo', 'Entretenimento'],
-    location: 'Santos - SP',
+    title: 'Projeto Concluído - Corredor Hospitalar',
+    description: 'Finalização de projeto de corredor Hospitalar com instalação de luminárias, acabamentos de parede e organização de instalações elétricas.',
+    image: 'https://lh3.googleusercontent.com/p/AF1QipM9uRwGnQ7H2QvEEx5YZjZGulfOHYqmva9Q-aKs=s1360-w1360-h1020-rw',
+    category: 'Hospitalar',
+    tags: ['Concluído', 'LED', 'Elétrica'],
+    location: 'Salvador - BA',
     year: 2023,
   },
   {
     id: 6,
-    title: 'Ponte Rio Verde',
-    description: 'Projeto e supervisão da construção de ponte rodoviária com 500m de extensão.',
-    image: 'https://images.unsplash.com/photo-1545459720-aac8509eb02c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    title: 'Instalação Elétrica - Medidores de Energia',
+    description: 'Instalação e padronização de caixas de medidores de energia elétrica com organização de fiação e conformidade com normas técnicas.',
+    image: 'https://lh3.googleusercontent.com/p/AF1QipP53fH1sU6m0wnjTl-qeexGnuMNwDmPu1cLdA9i=s1360-w1360-h1020-rw',
     category: 'Infraestrutura',
-    tags: ['Ponte', 'Rodoviário', 'Estrutural'],
-    location: 'Sorocaba - SP',
-    year: 2021,
+    tags: ['Elétrica', 'Medidores', 'Normas'],
+    location: 'Salvador - BA',
+    year: 2022,
   },
 ];
 
@@ -187,14 +188,15 @@ const Portfolio = () => {
   return (
     <Box>
       {/* Hero Section */}
-      <Box bg="brand.primary" color="white" py={20}>
-        <Container maxW="6xl">
+      <Box bg="brand.primary" color="white" py={20} position="relative" overflow="hidden">
+        <LogoBackground />
+        <Container maxW="6xl" position="relative" zIndex={1}>
           <Stack spacing={6} maxW="xl">
             <Heading as="h1" size="2xl">
               Nosso Portfólio
             </Heading>
             <Text fontSize="xl">
-              Conheça alguns dos nossos principais projetos e realizações.
+              Conheça nossos projetos reais de reformas, acabamentos e instalações elétricas executados com excelência técnica.
             </Text>
           </Stack>
         </Container>
@@ -211,7 +213,7 @@ const Portfolio = () => {
                 justify="center"
                 wrap="wrap"
               >
-                {['all', 'Comercial', 'Residencial', 'Industrial', 'Infraestrutura', 'Saúde'].map(
+                {['all', 'Hospitalar', 'Normas Técnicas', 'Infraestrutura'].map(
                   (category) => (
                     <Tag
                       key={category}

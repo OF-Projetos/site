@@ -9,6 +9,7 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 import { FaHandshake, FaLightbulb, FaChartLine, FaLeaf } from 'react-icons/fa';
+import LogoBackground from '../components/LogoBackground';
 
 const Value = ({ title, text, icon }: { title: string; text: string; icon: any }) => {
   return (
@@ -31,8 +32,9 @@ const About = () => {
   return (
     <Box>
       {/* Hero Section */}
-      <Box bg="brand.primary" color="white" py={20}>
-        <Container maxW="6xl">
+      <Box bg="brand.primary" color="white" py={20} position="relative" overflow="hidden">
+        <LogoBackground />
+        <Container maxW="6xl" position="relative" zIndex={1}>
           <Stack spacing={6} maxW="xl">
             <Heading as="h1" size="2xl">
               Sobre Nós
@@ -51,7 +53,7 @@ const About = () => {
             <Stack spacing={4}>
               <Heading>Nossa História</Heading>
               <Text color="gray.600" fontSize="lg">
-                Fundada em 2008, a OF Projetos nasceu com o objetivo de oferecer soluções inovadoras
+                Fundada em 2019, a OF Projetos nasceu com o objetivo de oferecer soluções inovadoras
                 e sustentáveis em engenharia civil. Ao longo dos anos, construímos uma reputação sólida
                 baseada na excelência técnica, comprometimento com prazos e satisfação dos clientes.
               </Text>

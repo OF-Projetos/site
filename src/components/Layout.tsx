@@ -1,6 +1,7 @@
 import { Box } from '@chakra-ui/react';
 import Header from './Header';
 import Footer from './Footer';
+import WhatsAppButton from './WhatsAppButton';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -14,6 +15,7 @@ const Layout = ({ children }: LayoutProps) => {
         {children}
       </Box>
       <Footer />
+      <WhatsAppButton />
     </Box>
   );
 };
