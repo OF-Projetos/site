@@ -17,6 +17,7 @@ import {
   useDisclosure,
 } from '@chakra-ui/react';
 import { useState } from 'react';
+import LogoBackground from '../components/LogoBackground';
 
 interface Project {
   id: number;
@@ -187,8 +188,9 @@ const Portfolio = () => {
   return (
     <Box>
       {/* Hero Section */}
-      <Box bg="brand.primary" color="white" py={20}>
-        <Container maxW="6xl">
+      <Box bg="brand.primary" color="white" py={20} position="relative" overflow="hidden">
+        <LogoBackground />
+        <Container maxW="6xl" position="relative" zIndex={1}>
           <Stack spacing={6} maxW="xl">
             <Heading as="h1" size="2xl">
               Nosso Portfólio

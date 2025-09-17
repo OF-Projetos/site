@@ -9,6 +9,7 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 import { FaHandshake, FaLightbulb, FaChartLine, FaLeaf } from 'react-icons/fa';
+import LogoBackground from '../components/LogoBackground';
 
 const Value = ({ title, text, icon }: { title: string; text: string; icon: any }) => {
   return (
@@ -31,8 +32,9 @@ const About = () => {
   return (
     <Box>
       {/* Hero Section */}
-      <Box bg="brand.primary" color="white" py={20}>
-        <Container maxW="6xl">
+      <Box bg="brand.primary" color="white" py={20} position="relative" overflow="hidden">
+        <LogoBackground />
+        <Container maxW="6xl" position="relative" zIndex={1}>
           <Stack spacing={6} maxW="xl">
             <Heading as="h1" size="2xl">
               Sobre Nós
