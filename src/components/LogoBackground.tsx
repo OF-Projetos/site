@@ -4,7 +4,7 @@ const LogoBackground = () => {
   return (
     <Box
       position="absolute"
-      right="-50px"
+      right="-20px"
       top="50%"
       transform="translateY(-50%)"
       opacity={0.08}
@@ -16,8 +16,8 @@ const LogoBackground = () => {
         {/* Logo Icon */}
         <Box position="relative">
           <Box
-            width="120px"
-            height="120px"
+            width="80px"
+            height="80px"
             borderRadius="50%"
             bg="linear-gradient(135deg, #4A90E2 0%, #2C5282 50%, #1A365D 100%)"
             position="relative"
@@ -37,18 +37,18 @@ const LogoBackground = () => {
             <Box
               position="absolute"
               bottom="15%"
-              right="-12px"
-              width="24px"
-              height="4px"
+              right="-8px"
+              width="16px"
+              height="3px"
               bg="#2C5282"
               borderRadius="2px"
             />
             <Box
               position="absolute"
               bottom="15%"
-              right="-12px"
-              width="4px"
-              height="18px"
+              right="-8px"
+              width="3px"
+              height="12px"
               bg="#2C5282"
               borderRadius="2px"
             />
@@ -58,20 +58,20 @@ const LogoBackground = () => {
         {/* Logo Text */}
         <Box>
           <Box
-            fontSize="72px"
+            fontSize="48px"
             fontWeight="bold"
             color="white"
-            letterSpacing="4px"
+            letterSpacing="2px"
             lineHeight="1"
             opacity={0.9}
           >
             OF
           </Box>
           <Box
-            fontSize="72px"
+            fontSize="48px"
             fontWeight="bold"
             color="white"
-            letterSpacing="4px"
+            letterSpacing="2px"
             lineHeight="1"
             opacity={0.9}
           >
