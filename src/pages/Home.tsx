@@ -11,6 +11,7 @@ import {
 } from '@chakra-ui/react';
 import { FaBuilding, FaHardHat, FaPencilRuler, FaTools } from 'react-icons/fa';
 import { Link as RouterLink } from 'react-router-dom';
+import LogoBackground from '../components/LogoBackground';
 
 const Feature = ({ title, text, icon }: { title: string; text: string; icon: any }) => {
   return (
@@ -33,7 +34,8 @@ const Home = () => {
         position="relative"
         overflow="hidden"
       >
-        <Container maxW="6xl">
+        <LogoBackground />
+        <Container maxW="6xl" position="relative" zIndex={1}>
           <Stack spacing={6} maxW="lg">
             <Heading
               as="h1"
