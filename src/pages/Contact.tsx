@@ -54,7 +54,7 @@ const Contact = () => {
     register,
     handleSubmit,
     reset,
-    formState: { errors, isSubmitting },
+    formState: { isSubmitting },
   } = useForm<ContactFormData>();
   const toast = useToast();
 

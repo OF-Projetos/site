@@ -1,4 +1,4 @@
-import { Box, Flex, Button, Stack, IconButton, useDisclosure, Link as ChakraLink } from '@chakra-ui/react';
+import { Box, Flex, Stack, IconButton, useDisclosure, Link as ChakraLink } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { Link } from 'react-router-dom';
 
