@@ -53,7 +53,7 @@ const About = () => {
             <Stack spacing={4}>
               <Heading>Nossa História</Heading>
               <Text color="gray.600" fontSize="lg">
-                Fundada em 2008, a OF Projetos nasceu com o objetivo de oferecer soluções inovadoras
+                Fundada em 2019, a OF Projetos nasceu com o objetivo de oferecer soluções inovadoras
                 e sustentáveis em engenharia civil. Ao longo dos anos, construímos uma reputação sólida
                 baseada na excelência técnica, comprometimento com prazos e satisfação dos clientes.
               </Text>
