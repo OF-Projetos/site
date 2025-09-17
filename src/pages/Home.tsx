@@ -171,6 +171,7 @@ const Home = () => {
               transition="all 0.3s ease"
               _hover={{
                 bg: 'brand.secondary',
+                color: 'white',
                 transform: 'translateY(-2px)',
                 boxShadow: '0 8px 25px rgba(0,0,0,0.15)',
               }}
