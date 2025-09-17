@@ -33,50 +33,50 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: 'Reforma Completa - Edifício Comercial 3º Andar',
+    title: 'Reforma Completa - Edifício Hospitalar 3º Andar',
     description: 'Execução completa de reforma interna incluindo instalação de drywall, acabamentos em massa corrida e preparação de superfícies para pintura final.',
-    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-    category: 'Comercial',
+    image: 'https://lh3.googleusercontent.com/pw/AP1GczOfx9e6C-MWlWnqM26eNMxfsKv3kkADwZKIff7pZdRRwlpX8ZkLGyEL3ZZ7cJu74vbzTEkplLeYbdmMmO3s6XPFi1cet1EHl-MwmMV-dyVAkhOzB-Q3vmh7qUcygidatnwCuBmHKtRmEwiej9oQaTzwgQ=w430-h931-s-no-gm?authuser=0',
+    category: 'Hospitalar',
     tags: ['Drywall', 'Acabamentos', 'Reforma'],
     location: 'Salvador - BA',
-    year: 2023,
+    year: 2025,
   },
   {
     id: 2,
-    title: 'Reforma de Escadaria - Edifício Residencial',
-    description: 'Renovação completa de escadaria com aplicação de massa corrida nos espelhos, preparação de superfícies e acabamentos finais.',
-    image: 'https://images.unsplash.com/photo-1449844908441-8829872d2607?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-    category: 'Residencial',
+    title: 'Reforma de Escadaria - Hospitalar norma de segurança ',
+    description: 'Norma de segurança implementada em escadaria hospitalar',
+    image: 'https://lh3.googleusercontent.com/p/AF1QipNGRM_fkgZqTKFRq8GhozS7tvHb0xWJ_K7JwgAx=s1360-w1360-h1020-rw',
+    category: 'Normas Técnicas',
     tags: ['Escadaria', 'Acabamentos', 'Renovação'],
     location: 'Salvador - BA',
-    year: 2023,
+    year: 2025,
   },
   {
     id: 3,
-    title: 'Instalação de Esquadrias - Projeto Comercial',
+    title: 'Instalação de Esquadrias - Projeto Hospitalar',
     description: 'Instalação de esquadrias de janela com estrutura metálica, preparação de aberturas e integração com instalações hidráulicas.',
-    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-    category: 'Comercial',
+    image: 'https://lh3.googleusercontent.com/pw/AP1GczMS8riRJYiItRkIZRJOZsCe4L2TX-Ml1gV-dzcCMDVgXJkJQ2NHxw0oCquhBMeMjseDzopB0PuyhaZOxAGiOHTjuNgvgIW2gVmeKFSmmBwb2k3qbpqFblwfhFg3nSZWsist-sTwa3yZ39cW6sUQnn8m_A=w430-h931-s-no-gm?authuser=0',
+    category: 'Hospitalar',
     tags: ['Esquadrias', 'Estrutural', 'Instalações'],
     location: 'Salvador - BA',
-    year: 2023,
+    year: 2024,
   },
   {
     id: 4,
-    title: 'Acabamento de Alto Padrão - Hall de Entrada',
-    description: 'Execução de acabamentos internos com piso de madeira polida, iluminação LED embutida e acabamentos de parede em alto padrão.',
-    image: 'https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-    category: 'Comercial',
-    tags: ['Alto Padrão', 'Piso Madeira', 'Iluminação'],
+    title: 'Supervisão e acompanhamento blidagem - Verniz Antichama',
+    description: 'Execução de acabamentos Norma Regulamentadora 32 (NR-32), pintura e verniz antichama.',
+    image: 'https://lh3.googleusercontent.com/p/AF1QipNRxpunw0RoinNVMNTMQzYkQM927qo1ouEsShrv=s1360-w1360-h1020-rw',
+    category: 'Hospitalar',
+    tags: ['blidagem', 'Piso Madeira', 'Verniz'],
     location: 'Salvador - BA',
-    year: 2023,
+    year: 2025,
   },
   {
     id: 5,
-    title: 'Projeto Concluído - Corredor Comercial',
-    description: 'Finalização de projeto de corredor comercial com instalação de luminárias LED, acabamentos de parede e organização de instalações elétricas.',
-    image: 'https://images.unsplash.com/photo-1519420573924-65fcd45245f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-    category: 'Comercial',
+    title: 'Projeto Concluído - Corredor Hospitalar',
+    description: 'Finalização de projeto de corredor Hospitalar com instalação de luminárias, acabamentos de parede e organização de instalações elétricas.',
+    image: 'https://lh3.googleusercontent.com/p/AF1QipM9uRwGnQ7H2QvEEx5YZjZGulfOHYqmva9Q-aKs=s1360-w1360-h1020-rw',
+    category: 'Hospitalar',
     tags: ['Concluído', 'LED', 'Elétrica'],
     location: 'Salvador - BA',
     year: 2023,
@@ -85,11 +85,11 @@ const projects: Project[] = [
     id: 6,
     title: 'Instalação Elétrica - Medidores de Energia',
     description: 'Instalação e padronização de caixas de medidores de energia elétrica com organização de fiação e conformidade com normas técnicas.',
-    image: 'https://images.unsplash.com/photo-1545459720-aac8509eb02c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    image: 'https://lh3.googleusercontent.com/p/AF1QipP53fH1sU6m0wnjTl-qeexGnuMNwDmPu1cLdA9i=s1360-w1360-h1020-rw',
     category: 'Infraestrutura',
     tags: ['Elétrica', 'Medidores', 'Normas'],
     location: 'Salvador - BA',
-    year: 2021,
+    year: 2022,
   },
 ];
 
@@ -213,7 +213,7 @@ const Portfolio = () => {
                 justify="center"
                 wrap="wrap"
               >
-                {['all', 'Comercial', 'Residencial', 'Infraestrutura'].map(
+                {['all', 'Hospitalar', 'Normas Técnicas', 'Infraestrutura'].map(
                   (category) => (
                     <Tag
                       key={category}
