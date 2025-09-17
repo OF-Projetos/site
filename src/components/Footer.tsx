@@ -1,5 +1,5 @@
 import { Box, Container, Stack, Text, Link, SimpleGrid, useColorModeValue } from '@chakra-ui/react';
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { FaEnvelope, FaWhatsapp, FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -27,25 +27,25 @@ const Footer = () => {
 
           <Stack align="flex-start">
             <Text fontWeight="bold" fontSize="lg" mb={2}>Contato</Text>
-            <Text>Telefone: (11) 1234-5678</Text>
-            <Text>Email: contato@engenhariapro.com.br</Text>
-            <Text>Endereço: Av. Principal, 1000</Text>
-            <Text>São Paulo - SP</Text>
+            <Text>Telefone: (71) 99213-0500</Text>
+            <Text>Email: ofprojetos21@gmail.com</Text>
+            <Text>Endereço: Loteamento - Granjas Rurais Pres. Vargas, Salvador - BA, 41230-000</Text>
+            <Text>Salvador - BA</Text>
           </Stack>
 
           <Stack align="flex-start">
             <Text fontWeight="bold" fontSize="lg" mb={2}>Redes Sociais</Text>
             <Stack direction="row" spacing={6}>
-              <Link href="#" isExternal>
-                <FaFacebook size="24px" />
+              <Link href="mailto:ofprojetos21@gmail.com" isExternal>
+                <FaEnvelope size="24px" />
               </Link>
-              <Link href="#" isExternal>
-                <FaTwitter size="24px" />
+              <Link href="https://wa.me/5571992130500" isExternal>
+                <FaWhatsapp size="24px" />
               </Link>
-              <Link href="#" isExternal>
+              <Link href="https://www.linkedin.com/company/of-projetos/" isExternal>
                 <FaLinkedin size="24px" />
               </Link>
-              <Link href="#" isExternal>
+              <Link href="https://www.instagram.com/ofprojetos/" isExternal>
                 <FaInstagram size="24px" />
               </Link>
             </Stack>
@@ -54,7 +54,7 @@ const Footer = () => {
 
         <Box borderTopWidth={1} borderStyle="solid" borderColor={useColorModeValue('gray.200', 'gray.700')} pt={8} mt={8}>
           <Text textAlign="center">
-            © {new Date().getFullYear()} EngenhariaPro. Todos os direitos reservados.
+            © {new Date().getFullYear()} OF Projetos. Todos os direitos reservados.
           </Text>
         </Box>
       </Container>

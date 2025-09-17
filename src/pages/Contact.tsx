@@ -191,8 +191,8 @@ const Contact = () => {
                   icon={FaPhone}
                   title="Telefone"
                   content={
-                    <Link href="tel:+551199999999" color="gray.600">
-                      (11) 9999-9999
+                    <Link href="tel:+5571992130500" color="gray.600">
+                      (71) 99213-0500
                     </Link>
                   }
                 />
@@ -201,8 +201,8 @@ const Contact = () => {
                   icon={FaEnvelope}
                   title="Email"
                   content={
-                    <Link href="mailto:contato@engenhariapro.com.br" color="gray.600">
-                      contato@engenhariapro.com.br
+                    <Link href="mailto:ofprojetos21@gmail.com" color="gray.600">
+                      ofprojetos21@gmail.com
                     </Link>
                   }
                 />
@@ -212,9 +212,9 @@ const Contact = () => {
                   title="Endereço"
                   content={
                     <Stack spacing={0}>
-                      <Text color="gray.600">Av. Principal, 1000</Text>
-                      <Text color="gray.600">Centro - São Paulo/SP</Text>
-                      <Text color="gray.600">CEP: 01000-000</Text>
+                      <Text color="gray.600">Loteamento - Granjas Rurais Pres. Vargas,</Text>
+                      <Text color="gray.600">Salvador - BA</Text>
+                      <Text color="gray.600">CEP: 41230-000</Text>
                     </Stack>
                   }
                 />
@@ -239,7 +239,7 @@ const Contact = () => {
                 height="300px"
               >
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1440489534994!2d-46.65429388502164!3d-23.564611284681765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0x63b9f0e6074baa47!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1647887829824!5m2!1spt-BR!2sbr"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.768497836515!2d-38.46314562500977!3d-12.922595358825578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7161b3b8b1f9175%3A0x72d34052cd546711!2sOF%20Projetos!5e0!3m2!1sen!2sbr!4v1758075535502!5m2!1sen!2sbr"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

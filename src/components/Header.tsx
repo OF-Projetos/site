@@ -25,7 +25,7 @@ const Header = () => {
     <Box bg="white" px={4} boxShadow="sm">
       <Flex h={16} alignItems="center" justifyContent="space-between">
         <ChakraLink as={Link} to="/" fontWeight="bold" fontSize="xl">
-          EngenhariaPro
+          OF Projetos 
         </ChakraLink>
 
         <Flex display={{ base: 'none', md: 'flex' }} alignItems="center">
